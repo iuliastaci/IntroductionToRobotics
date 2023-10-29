@@ -22,3 +22,25 @@ Here is an image with the setup:
 ![IMG_0057](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/2c70afec-1e08-4347-a397-a6044bdbc2fc)
 
 If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/uMUZUHX3868?si=dJovIazbBCfvslvJ).
+
+## Homework 3 - Elevator simulator wannabe
+In simple terms, this task is about creating a mini model of a 3-floor elevator using an Arduino. We will have lights (LEDs) that show which floor the elevator is on, buttons on each floor to call the elevator, and a buzzer to make sounds when the elevator arrives or moves. The elevator will have some rules: it will wait a bit when you press a button, and if it's already on the right floor, nothing happens. We also make sure the buttons work properly by preventing accidental presses.
+
+The system will feature the following components:
+1. _LED Indicators_: Three LEDs will be employed to represent the three elevator floors. The LED corresponding to the current floor will be illuminated. Additionally, another LED will indicate the elevator's operational state by blinking while in motion and remaining steady when stationary. I've used red LEDs for elevator floors and one green LED to indicate the operational state of the elevator.
+2. _Buttons_: Three buttons, each representing a call button from one of the three floors, will be implemented. When a button is pressed, the elevator will simulate movement toward that floor after a brief delay of 2-3 seconds.
+3. _Buzzer_: The buzzer will produce brief sounds during specific events - a sound when the elevator arrives at the desired floors and two distinct sounds for elevator door closing and elevator movement. For this component, I've used a 100 Ohm resistor.
+4. _Resistors and wires_: These components are used to connect the buttons, the LEDs and the buzzer to the Arduino. Resistor values are selected based on the LED's forward voltage and current requirements. For this setup, I've used three 220-Ohm resistors, one for each red LED, and two 100-Ohm resistors, one for the green LED and one for the buzzer.
+
+
+The elevator's behavior will be governed by the following rules:
+* If the elevator is already at the desired floor, pressing the corresponding button will have no effcet.
+* After a button press, the elevator will "wait for the doors to close" and then "move" to the corresponding floor.
+
+To ensure the reliability of the button inputs, a debounce mechanism will be implemented. This will prevent unintended repeated button presses caused by mechanical switch bouncing.
+
+Here is an image with the setup:
+![homework 3](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/b5849aee-960c-460a-9f5e-3877c1c51083)
+
+
+If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/EWf-sx_lL34 ).
