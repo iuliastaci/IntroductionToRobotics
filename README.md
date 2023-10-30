@@ -37,7 +37,7 @@ The system will feature the following components:
 
 
 The elevator's behavior will be governed by the following rules:
-* If the elevator is already at the desired floor, pressing the corresponding button will have no effcet.
+* If the elevator is already at the desired floor, pressing the corresponding button will have no effect.
 * After a button press, the elevator will "wait for the doors to close" and then "move" to the corresponding floor.
 
 To ensure the reliability of the button inputs, a debounce mechanism will be implemented. This will prevent unintended repeated button presses caused by mechanical switch bouncing.
