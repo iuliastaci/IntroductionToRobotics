@@ -2,7 +2,8 @@
 Welcome to "Introduction to Robotics" repository! 
 This repository contains laboratory homework assignments for the third-year course taken at the Faculty of Mathematics and Computer Science, University of Bucharest. Each homework assignment comes with _requirements_, _implementation details_, _code_ and _image files_.
 
-## Homework 2 - An RGB LED controlled with 3 potentiometers
+<details>
+<summary><h2>Homework 2 - An RGB LED controlled with 3 potentiometers</h2></summary>
 For this homework, I'm using an Arduino to control a special color-changing LED (RGB LED). But the cool part is that I'm not just picking colors from a list - I'm using three knobs called potentiometers to make the LED change colors in a way I like. So, each knob lets me pick a different color for the LED. It's like having three magic color dials to create any color I like! 🪄
 
 Technically speaking, the objective of this homework is to control each channel (Red, Green, Blue) of an RGB LED using individual potentiometers in conjunction with an Arduino microcontroller.
@@ -22,8 +23,10 @@ Here is an image with the setup:
 ![IMG_0057](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/2c70afec-1e08-4347-a397-a6044bdbc2fc)
 
 If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/uMUZUHX3868?si=dJovIazbBCfvslvJ).
+</details>
 
-## Homework 3 - Elevator simulator wannabe
+<details>
+<summary><h2>Homework 3 - Elevator simulator wannabe</h2></summary>
 In simple terms, this task is about creating a mini model of a 3-floor elevator using an Arduino. We will have lights (LEDs) that show which floor the elevator is on, buttons on each floor to call the elevator, and a buzzer to make sounds when the elevator arrives or moves. The elevator will have some rules: it will wait a bit when you press a button, and if it's already on the right floor, nothing happens. We also make sure the buttons work properly by preventing accidental presses.
 
 The system will feature the following components:
@@ -44,3 +47,4 @@ Here is an image with the setup:
 
 
 If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/EWf-sx_lL34 ).
+</details>
