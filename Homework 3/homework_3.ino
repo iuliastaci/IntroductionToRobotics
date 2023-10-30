@@ -70,6 +70,8 @@ void setup() {
   digitalWrite(floorLedsPin[0], HIGH); // Turn on the first floor LED
   noTone(buzzerPin); // Turn offn the buzzer
 
+  Serial.begin(9600);
+
 }
 
 void loop() {
