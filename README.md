@@ -48,3 +48,19 @@ Here is an image with the setup:
 
 If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/EWf-sx_lL34 ).
 </details>
+
+<details>
+<summary><h2>Homework 4 - 7 segment display drawing</h2></summary>
+In this homework, I'm using a joystick to move a segment on a display screen. I can't move through obstacles and I start on a specific point (decimal point - down right). The current position blinks and I can use the joystick to move to nearby positions (up, down, left, right). Pressing the button quickly turns the segment on or off and holding the button resets the entire display.
+
+The setup includes the following electronic components:
+1. _7-segment display_: It is a small electronic screen that uses 7 separate LED segments to show numbers and some letters.
+2. _Joystick_: It is a handheld input device commonly used for controlling the movement or position of object in a digital environment. It typically consists of a stick-like handle that can be pushed or tilted in various directions.
+3. _Resistors and wires_: These components are used to connect the 7-segment display and the joystick to the Arduino. Resistor values are selected based on the 7-segment display LED's forward voltage and current requirements. For this setup, I've used eight 330-Ohm resistors, one for segment LED.
+
+Here is a picture of the setup:
+![IMG_0238](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/ded80fa2-2d46-40af-9b4c-2f87865abd40)
+
+If you want to watch a demo of the homework, click [here].
+</details>
+
