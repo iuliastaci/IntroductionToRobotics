@@ -61,6 +61,6 @@ The setup includes the following electronic components:
 Here is a picture of the setup:
 ![IMG_0238](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/ded80fa2-2d46-40af-9b4c-2f87865abd40)
 
-If you want to watch a demo of the homework, click [here].
+If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/pzlum-Pjn4I).
 </details>
 
