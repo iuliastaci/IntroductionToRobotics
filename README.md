@@ -64,3 +64,25 @@ Here is a picture of the setup:
 If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/pzlum-Pjn4I).
 </details>
 
+<details>
+<summary><h2>Homework 5 - Stopwatch Timer</h2></summary>
+For this project, I'm using a 4-digit 7-segment display and 3 buttons in order to implement a stopwatch timer with 3 functionalities: start/pause, reset and save lap.
+  
+It should use the following workflow:  
+
+1. Start the timer by pressing the Start button when the display shows "000.0".
+2. Save lap times in memory (up to 4 laps) by pressing the lap button during the timer. The 5th press overrides the 1st. Reset button has no effect during timer, and the pause button stops the timer.
+3. In Pause Mode, the lap flag button is disabled. Pressing the reset button sets the timer to "000.0".
+4. After reset, use flag buttons to cycle through lap times. Pressing continuously cycles through laps, and resetting while in this state clears flags and resets the timer to "000.0".
+
+The setup includes the following electronic components:
+1. _4-digit 7-segment display_: It is a small electronic screen that uses 7 separate LED segments for each of the 4 digits to show numbers and some letters.
+2. _Buttons_: Three buttons, one to start or pause the counting, one for resetting the counter or the saved laps and one for saving the laps and cycle through them.
+3. _Resistors and wires_: These components are used to connect the 7-segment display and the buttons to the Arduino. Resistor values are selected based on the 7-segment display LED's forward voltage and current requirements. For this setup, I've used eight 330-Ohm resistors, one for each segment LED.
+4. _Shift register_: It is a digital circuit that can shift its stored data through a series of flip-flops, typically in a linear fashion.
+
+Here is a picture of the setup:
+![IMG_0507](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/7307c809-0819-4284-9de1-042c4bd0fffc)
+
+If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/PFdx8g3E60M).
+</details>
