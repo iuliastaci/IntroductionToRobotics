@@ -86,3 +86,40 @@ Here is a picture of the setup:
 
 If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/PFdx8g3E60M).
 </details>
+
+<details>
+<summary><h2>Homework 6 - Pseudo - Smart Environment Monitor and Logger</h2></summary>
+
+This project aims to create a "Smart Environment Monitor and Logger" using Arduino, combining a diverse array of sensors to collect crucial environmental data. The system efficiently logs this information into EEPROM for later retrieval. A key feature of the project is the incorporation of an RGB LED, offering visual feedback based on the environmental conditions. Additionally, users can interact with the system through a Serial Menu, providing a seamless interface for navigation and customization. The project underscores the integration of sensor readings, effective memory management, serial communication, and the overarching goal of constructing a user-friendly menu system.
+
+**Menu structure**
+1. _Sensor Settings_  
+ &nbsp;1.1. Sensors Sampling Interval <br>
+ &nbsp;1.2. Ultrasonic Alert Threshold <br>
+ &nbsp;1.3. LDR Alert Threshold <br>
+ &nbsp;1.4. Back <br>
+2. _Reset Logger Data_ <br>
+ &nbsp;2.1. Yes <br>
+ &nbsp;2.2. No <br>
+3. _System Status_ <br>
+  &nbsp;3.1. Current Sensor Readings <br>
+  &nbsp;3.2. Current Sensor Settings <br>
+  &nbsp;3.3. Display Logged Data <br>
+  &nbsp;3.4. Back <br>
+4. _RGB LED Control_ <br>
+ &nbsp;4.1. Manual Color Control <br>
+ &nbsp;4.2. LED Toggle Automatic ON/OFF <br>
+ &nbsp;4.3. Back <br>
+
+The setup involves the use of specific electronic components, including:
+1. _RGB LED_: The RGB LED used has 4 pins, one for each color channel (Red, Green, Blue) and one common cathode pin.
+2. _Ultrasonic Sensor_: The HC-SR04 is a widely-used ultrasonic distance sensor that employs sound waves to measure distances. It consists of an ultrasonic transmitter that emits pulses and a receiver that detects the reflected signals. By calculating the time taken for the ultrasonic waves to travel to an object and back, the sensor provides accurate distance measurements, making it popular for applications such as robotics, obstacle avoidance, and distance sensing in various projects.
+3. _LDR_: Light Dependent Resistor is a type of photoresistor that exhibits a change in resistance based on the intensity of light falling on it. As light levels fluctuate, the LDR's resistance varies in response. This characteristic makes it a valuable component in light-sensitive circuits. Commonly used in applications like automatic streetlights, camera exposure control, and darkness-activated switches, the LDR enables devices to adapt to ambient light conditions by providing a variable resistance corresponding to the surrounding illumination.
+4. _Resistors and wires_: These components are used to connect the potentiometers and the RGB LED to the Arduino. Resistor values are selected based on the LED's forward voltage and current requirements. For this particular setup, I've used a 220-Ohm resistor for the Red channel and two 100-Ohm resistors for Blue and Green channels. And for LDR I have used a 10k-Ohm resistor.
+
+Here is a picture of the setup:
+![IMG_0537](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/8c3a3882-a7ab-4328-9eda-7d1be00fc589)
+
+If you want to watch a demo of the project, click [here](https://youtube.com/shorts/qPYjCvedyBo)
+
+</details>
