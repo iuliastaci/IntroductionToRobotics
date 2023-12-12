@@ -1,3 +1,27 @@
+/*
+Homework 8
+
+This sketch implements a game on a 8x8 LED Matrix using a joystick and a LCD. 
+MindMatrix Challenge is a memory game. It has 3 levels with gradual difficulty.
+At each level, a random pattern is displayed for a couple of seconds, than the player
+should move on the matrix using the joystick to turn on the LEDs corresponding to
+the pattern in order to win the game. 
+If the player turns on a LED that is not in the pattern, the game is over. 
+
+Created 08/12/2023
+By Ana-Iulia Staci
+
+Modified 09/12/2023
+By Ana-Iulia Staci
+
+Modified 10/12/2023
+By Ana-Iulia Staci
+
+Modified 12/12/2023
+By Ana-Iulia Staci
+
+*/
+
 #include "LedControl.h"
 #include <LiquidCrystal.h>
 #include "EEPROM.h"
@@ -279,14 +303,7 @@ void movePlayer(int direction) {
   if (playerY >= matrixSize) {
     playerY = 0;
   }
-  // Set the new player position -  blink the player LED depending on its state (on or off)
-  if (currentMatrix[playerX][playerY] == 1) {
-    //blinkPlayerLED(rapidBlinkInterval);
-    // blinked the player LED more quickly when that LED is already on
-  } else {
-    //blinkPlayerLED(blinkInterval);
-    // blink the player LED normally when that LED is off
-  }
+  // Set the new player position 
   lc.setLed(0, playerX, playerY, true);
 }
 
@@ -364,12 +381,6 @@ void displayScore() {
   lcd.print(score);
 }
 
-// TO DO: Modify this function to use update instead of write
-// void saveScore() {
-//   // Save the player's score to EEPROM
-//   EEPROM.write(currentLevel, score);
-// }
-
 void increaseLevel() {
   // Increase the difficulty level and reset the player's position
   currentLevel++;
@@ -386,8 +397,6 @@ void resetGame() {
   score = 0;
   // Clear the matrix display
   lc.clearDisplay(0);
-  // Generate a new pattern for the current level
-  // generatePattern();
   for (int i = 0; i < matrixSize; i++)
     for (int j = 0; j < matrixSize; j++) {
       currentMatrix[i][j] = 0;
@@ -403,46 +412,6 @@ void blinkPlayerLED(int delayTime) {
   }
 }
 
-//Functions used for main menu and submenus
-// void displayMainMenu() {
-//   lcd.clear();
-//   lcd.setCursor(0, 0);
-//   lcd.print("Main Menu");
-//   lcd.setCursor(0, 1);
-//   lcd.print("(a) Start Game");
-//   lcd.setCursor(0, 2);
-//   lcd.print("(b) Settings");
-//   lcd.setCursor(0, 3);
-//   lcd.print("(c) About");
-// }
-
-// void printSettingsMenu() {
-//   lcd.clear();
-//   lcd.setCursor(0, 0);
-//   lcd.print("Settings");
-//   lcd.setCursor(0, 1);
-//   lcd.print("(a) Change LCD Brightness");
-//   lcd.setCursor(0, 2);
-//   lcd.print("(b) Change Matrix Brightness");
-//   lcd.setCursor(0, 3);
-//   lcd.print("(c) Back");
-// }
-
-// void printAbout() {
-//   lcd.clear();
-//   lcd.setCursor(0, 0);
-//   lcd.autoscroll();
-//   lcd.print("MindMatrix Challenge");
-//   lcd.noAutoscroll();
-//   lcd.setCursor(0, 1);
-//   lcd.autoscroll();
-//   lcd.print("Made by Ana-Iulia Staci");
-//   lcd.noAutoscroll();
-//   lcd.setCursor(0, 2);
-//   lcd.autoscroll();
-//   lcd.print("https://github.com/iuliastaci");
-//   lcd.noAutoscroll();
-// }
 
 void readJoystick() {
   xValue = analogRead(pinX);
@@ -531,7 +500,7 @@ void selectMenuItem() {
       currentMenuItem = 0;  // Reset submenu to the first item
       displaySubMenu(menuItems[2]);
       break;
-      // Add more cases for additional menu items
+      
   }
 
   delay(twoSDelay);    // Display selected menu item for 2 seconds
@@ -587,9 +556,6 @@ void displaySubMenu(const char* submenuTitle) {
           lcd.print("Selected: ");
           lcd.setCursor(0, 1);
           lcd.print(submenuItems[submenuSelection]);
-
-          // Perform action based on selected submenu item
-          // Add your submenu-specific logic here
 
           delay(twoSDelay);  // Display selected submenu item for 2 seconds
           return;
