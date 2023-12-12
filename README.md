@@ -123,3 +123,22 @@ Here is a picture of the setup:
 If you want to watch a demo of the project, click [here](https://youtube.com/shorts/qPYjCvedyBo)
 
 </details>
+
+<details>
+  <summary><h2>Homework 7 - Matrix Game Checkpoint (MindMatrix Challenge)</h2></summary>
+  This homework is a checkpoint for a bigger project, a game on an 8x8 LED Matrix controlled with a joystick and paired with a LCD to display relevant information. If you want to see more about this project, click here.
+  The game name is MindMatrix Challenge because guess what? ... It's a memory game where you can test your brain and attention. 
+  It consists of 3 levels with progressing difficulty. At each level, some LEDs are turned on in order to form a random pattern and it is displayed for a couple of seconds. Than, there's a LED blinking ... that's the player. It can be moved on the matrix using the joystick. When clicking the switch button, the LED at pleyer's position is turned on or off, depending on its previous state. 
+  To win the game, you should represent the correct pattern at each level. If a LED that is not in the pattern is turned on, the game is over. 
+
+  The setup involves the use of specific electronic components, including:
+1. _8x8 LED Matrix_: The 8x8 LED Matrix for Arduino is a dynamic display module that brings a vibrant visual element to Arduino projects. Consisting of 64 individually addressable LEDs arranged in an 8x8 grid, this matrix allows for the creation of custom patterns, scrolling text, and dynamic graphics. With seamless integration into Arduino projects, it provides a simple and effective way to add eye-catching visual feedback. Ideal for projects requiring compact and programmable displays, the 8x8 LED Matrix enhances the creative possibilities of Arduino-based applications.
+2. _LCD_: The Hitachi LCD for Arduino is a compact and versatile liquid crystal display module designed to seamlessly integrate with Arduino microcontrollers. Featuring a user-friendly interface and clear, crisp display capabilities, it allows developers to easily incorporate visual feedback into their Arduino projects. With its compatibility and reliability, the Hitachi LCD enhances the overall user experience, making it an ideal choice for projects requiring a compact and efficient display solution.
+3. _Joystick_: It is a handheld input device commonly used for controlling the movement or position of object in a digital environment. It typically consists of a stick-like handle that can be pushed or tilted in various directions.
+4. _MAX7219 Driver_: The MAX7219 Driver for Arduino Matrix is a powerful display driver module that simplifies the control of LED matrix displays. Specifically designed for use with Arduino, this driver seamlessly interfaces with 8x8 LED matrices, providing an efficient means to control individual LEDs and create captivating visual effects. With its versatile features and ease of integration, the MAX7219 Driver enhances the capabilities of Arduino projects, enabling users to easily implement scrolling text, animations, and customized patterns on LED matrix displays with minimal programming effort. It's an excellent choice for those seeking a compact and user-friendly solution for dynamic visual displays in Arduino-based applications.
+5. _Resistors and wires_: These components are used to connect the matrix, LCD, joystick and the driver to the Arduino.
+
+Here is a picture of the setup:
+
+If you want to watch a demo of the game, click here.
+</details>
