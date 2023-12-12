@@ -141,6 +141,6 @@ If you want to watch a demo of the project, click [here](https://youtube.com/sho
 Here is a picture of the setup:
 ![IMG_0620](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/2b7f41f5-dc9c-4325-9bab-8f06863ca49c)
 
-If you want to watch a demo of the game, click [here].
+If you want to watch a demo of the game, click [here](https://youtube.com/shorts/noldko7yy7M).
 </details>
 
