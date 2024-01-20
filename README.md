@@ -11,12 +11,12 @@ Technically speaking, the objective of this homework is to control each channel 
 The setup involves the use of specific electronic components, including:
 1. _RGB LED_: The RGB LED used has 4 pins, one for each color channel (Red, Green, Blue) and one common cathode pin.
 2. _Potentiometers_: Three potentiometers are used, one for each color channel. They are variable resistors that provide analog voltage readings based on their position.
-3. _Resistors and wires_: These components are used to connect the potentiometers and the RGB LED to the Arduino. Resistor values are selected based on the LED's forward voltage and current requirements. For this particular setup, I've used a 220-Ohm resistor for the Red channel and two 100-Ohm resistors for Blue and Green channels.
+3. _Resistors and wires_: These components are used to connect the potentiometers and the RGB LED to the Arduino. Resistor values are selected based on the LED's forward voltage and current requirements. For this particular setup, I've used a 220-Ohm resistor for the Red channel and two 100-Ohm resistors for the Blue and Green channels.
 
 The following steps are involved in achieving the desired control:
 1. Connect the potentiometers to the Arduino's analog pins (A0, A1, A2 pins for this setup).
-2. Read the analog values from the potentiometers. These values corespond to the positions of the potentiometer knobs.
-3. Map the analog readings to appropiate output values for each color channel (Red, Green and Blue). This mapping ensures that the LED's colors change according to the potentiometer positions.
+2. Read the analog values from the potentiometers. These values correspond to the positions of the potentiometer knobs.
+3. Map the analog readings to appropriate output values for each color channel (Red, Green and Blue). This mapping ensures that the LED's colors change according to the potentiometer positions.
 4. Send the mapped values to the pins of the RGB LED, controlling the intensity of each color channel (for this setup: Red - pin 9, Green - pin 10, Blue - pin 11).
 
 Here is an image with the setup:
@@ -55,7 +55,7 @@ In this homework, I'm using a joystick to move a segment on a display screen. I 
 
 The setup includes the following electronic components:
 1. _7-segment display_: It is a small electronic screen that uses 7 separate LED segments to show numbers and some letters.
-2. _Joystick_: It is a handheld input device commonly used for controlling the movement or position of object in a digital environment. It typically consists of a stick-like handle that can be pushed or tilted in various directions.
+2. _Joystick_: It is a handheld input device commonly used for controlling the movement or position of the object in a digital environment. It typically consists of a stick-like handle that can be pushed or tilted in various directions.
 3. _Resistors and wires_: These components are used to connect the 7-segment display and the joystick to the Arduino. Resistor values are selected based on the 7-segment display LED's forward voltage and current requirements. For this setup, I've used eight 330-Ohm resistors, one for segment LED.
 
 Here is a picture of the setup:
@@ -71,7 +71,7 @@ For this project, I'm using a 4-digit 7-segment display and 3 buttons in order t
 It should use the following workflow:  
 
 1. Start the timer by pressing the Start button when the display shows "000.0".
-2. Save lap times in memory (up to 4 laps) by pressing the lap button during the timer. The 5th press overrides the 1st. Reset button has no effect during timer, and the pause button stops the timer.
+2. Save lap times in memory (up to 4 laps) by pressing the lap button during the timer. The 5th press overrides the 1st. The reset button has no effect during the timer, and the pause button stops the timer.
 3. In Pause Mode, the lap flag button is disabled. Pressing the reset button sets the timer to "000.0".
 4. After reset, use flag buttons to cycle through lap times. Pressing continuously cycles through laps, and resetting while in this state clears flags and resets the timer to "000.0".
 
@@ -84,7 +84,7 @@ The setup includes the following electronic components:
 Here is a picture of the setup:
 ![IMG_0507](https://github.com/iuliastaci/IntroductionToRobotics/assets/103101598/7307c809-0819-4284-9de1-042c4bd0fffc)
 
-If you want to watch a demo of the homework, click [here](https://youtube.com/shorts/PFdx8g3E60M).
+If you want to watch a homework demo, click [here](https://youtube.com/shorts/PFdx8g3E60M).
 </details>
 
 <details>
@@ -126,15 +126,15 @@ If you want to watch a demo of the project, click [here](https://youtube.com/sho
 
 <details>
   <summary><h2>Homework 7 - Matrix Game Checkpoint (MindMatrix Challenge)</h2></summary>
-  This homework is a checkpoint for a bigger project, a game on an 8x8 LED Matrix controlled with a joystick and paired with a LCD to display relevant information. If you want to see more about this project, click here.
-  The game name is MindMatrix Challenge because guess what? ... It's a memory game where you can test your brain and attention. 
+  This homework is a checkpoint for a bigger project, a game on an 8x8 LED Matrix controlled with a joystick and paired with an LCD to display relevant information.
+  The game's name is MindMatrix Challenge because guess what? ... It's a memory game where you can test your brain and attention. 
   It consists of 3 levels with progressing difficulty. At each level, some LEDs are turned on in order to form a random pattern and it is displayed for a couple of seconds. Than, there's a LED blinking ... that's the player. It can be moved on the matrix using the joystick. When clicking the switch button, the LED at pleyer's position is turned on or off, depending on its previous state. 
-  To win the game, you should represent the correct pattern at each level. If a LED that is not in the pattern is turned on, the game is over. 
+  To win the game, you should represent the correct pattern at each level. If an LED that is not in the pattern is turned on, the game is over. 
 
   The setup involves the use of specific electronic components, including:
 1. _8x8 LED Matrix_: The 8x8 LED Matrix for Arduino is a dynamic display module that brings a vibrant visual element to Arduino projects. Consisting of 64 individually addressable LEDs arranged in an 8x8 grid, this matrix allows for the creation of custom patterns, scrolling text, and dynamic graphics. With seamless integration into Arduino projects, it provides a simple and effective way to add eye-catching visual feedback. Ideal for projects requiring compact and programmable displays, the 8x8 LED Matrix enhances the creative possibilities of Arduino-based applications.
 2. _LCD_: The Hitachi LCD for Arduino is a compact and versatile liquid crystal display module designed to seamlessly integrate with Arduino microcontrollers. Featuring a user-friendly interface and clear, crisp display capabilities, it allows developers to easily incorporate visual feedback into their Arduino projects. With its compatibility and reliability, the Hitachi LCD enhances the overall user experience, making it an ideal choice for projects requiring a compact and efficient display solution.
-3. _Joystick_: It is a handheld input device commonly used for controlling the movement or position of object in a digital environment. It typically consists of a stick-like handle that can be pushed or tilted in various directions.
+3. _Joystick_: It is a handheld input device commonly used for controlling the movement or position of the object in a digital environment. It typically consists of a stick-like handle that can be pushed or tilted in various directions.
 4. _MAX7219 Driver_: The MAX7219 Driver for Arduino Matrix is a powerful display driver module that simplifies the control of LED matrix displays. Specifically designed for use with Arduino, this driver seamlessly interfaces with 8x8 LED matrices, providing an efficient means to control individual LEDs and create captivating visual effects. With its versatile features and ease of integration, the MAX7219 Driver enhances the capabilities of Arduino projects, enabling users to easily implement scrolling text, animations, and customized patterns on LED matrix displays with minimal programming effort. It's an excellent choice for those seeking a compact and user-friendly solution for dynamic visual displays in Arduino-based applications.
 5. _Resistors and wires_: These components are used to connect the matrix, LCD, joystick and the driver to the Arduino.
 
